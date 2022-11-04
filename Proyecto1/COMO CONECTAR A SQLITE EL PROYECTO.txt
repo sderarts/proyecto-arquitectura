@@ -1,0 +1,19 @@
+Como usar el sqlite
+*sqlite studio
+se descarga en https://sqlitestudio.pl/
+se extrae y se ejecuta el archivo SQLITEstudio.exe
+click en database
+click en add a database
+bajo donde dice file click en el botón verde y se localiza el archivo db.sqlite3 que está dentro de Proyecto1 o el archivo q se crea al crear project django
+name se deja igual(db)
+click en ok y ya está conectado a sqlite el proyecto
+
+--python manage.py makemigrations
+--python manage.py migrate
+--python manage.py createsuperuser
+--python manage.py runserver
+
+instalar esto q esto igual pq está dentro del proyecto
+dentro de 
+C:\Proyecto1> pip install django-crispy-forms 
+y eso  sería
