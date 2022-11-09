@@ -8,5 +8,9 @@ from django.contrib.auth.models import User
 class CustomUserCreationForm(UserCreationForm):
     
     class Meta:
-        model = User
-        fields = ['username','email','password1','password2']
+        model = Customer
+        fields = ['name','email','passw','passw','imagen']
+
+    imagen = forms.ImageField(label="Avatar", required=False, widget=forms.FileInput(attrs={'class':'form-control'}))
+
+    

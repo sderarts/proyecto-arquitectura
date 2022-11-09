@@ -34,10 +34,14 @@
             <h2 class="fw-bold mb-5">Crea una cuenta</h2>
             
            
-            <form action="" method="post" >
+            <form action="" method="post" enclype="multipart/form-data">
               <!-- 2 column grid layout with text inputs for the first and last names -->
               {% csrf_token %}
-              {{ form | crispy }}}
+              {{ form | crispy }}
+              <div class="form-group">
+                {{form.imagen.errors}}
+                <label for="{{form.imagen.id_for_label}}" class="mb-1">Imagen: </label>
+                {{form.imagen}}
               <button type="submit" class="btn btn-success">Register</button>
             </form>  
           
